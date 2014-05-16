@@ -8,7 +8,7 @@ html, body {
   font-size: 16px; }
 
 body {
-  margin: 40px; }
+  margin: 30px; }
 
 .heading {
   margin: 0 100px 0 60px; }
@@ -113,12 +113,10 @@ strong.important {
 
 hr {
   border: none;
-  border-bottom: 1px solid #d8d4d0;
-  margin-top: 20px;
-  margin-bottom: 30px; }
+  border-bottom: 1px solid #d8d4d0; }
 
 .container {
-  width: 450px;
+  width: 400px;
   margin: 0 auto; }
 
 @-webkit-keyframes fade-in {
@@ -153,8 +151,8 @@ hr {
   touch-action: none;
   background: #bbada0;
   border-radius: 6px;
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -217,8 +215,8 @@ hr {
     clear: both; }
 
 .grid-cell {
-  width: 100px;
-  height: 100px;
+  width: 87.5px;
+  height: 87.5px;
   margin-right: 10px;
   float: left;
   border-radius: 3px;
@@ -231,73 +229,73 @@ hr {
   z-index: 2; }
 
 .tile, .tile .tile-inner {
-  width: 100px;
-  height: 100px;
-  line-height: 110px; }
+  width: 88px;
+  height: 88px;
+  line-height: 97.5px; }
 .tile.tile-position-1-1 {
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
   transform: translate(0px, 0px); }
 .tile.tile-position-1-2 {
-  -webkit-transform: translate(0px, 110px);
-  -moz-transform: translate(0px, 110px);
-  transform: translate(0px, 110px); }
+  -webkit-transform: translate(0px, 97px);
+  -moz-transform: translate(0px, 97px);
+  transform: translate(0px, 97px); }
 .tile.tile-position-1-3 {
-  -webkit-transform: translate(0px, 220px);
-  -moz-transform: translate(0px, 220px);
-  transform: translate(0px, 220px); }
+  -webkit-transform: translate(0px, 195px);
+  -moz-transform: translate(0px, 195px);
+  transform: translate(0px, 195px); }
 .tile.tile-position-1-4 {
-  -webkit-transform: translate(0px, 330px);
-  -moz-transform: translate(0px, 330px);
-  transform: translate(0px, 330px); }
+  -webkit-transform: translate(0px, 292px);
+  -moz-transform: translate(0px, 292px);
+  transform: translate(0px, 292px); }
 .tile.tile-position-2-1 {
-  -webkit-transform: translate(110px, 0px);
-  -moz-transform: translate(110px, 0px);
-  transform: translate(110px, 0px); }
+  -webkit-transform: translate(97px, 0px);
+  -moz-transform: translate(97px, 0px);
+  transform: translate(97px, 0px); }
 .tile.tile-position-2-2 {
-  -webkit-transform: translate(110px, 110px);
-  -moz-transform: translate(110px, 110px);
-  transform: translate(110px, 110px); }
+  -webkit-transform: translate(97px, 97px);
+  -moz-transform: translate(97px, 97px);
+  transform: translate(97px, 97px); }
 .tile.tile-position-2-3 {
-  -webkit-transform: translate(110px, 220px);
-  -moz-transform: translate(110px, 220px);
-  transform: translate(110px, 220px); }
+  -webkit-transform: translate(97px, 195px);
+  -moz-transform: translate(97px, 195px);
+  transform: translate(97px, 195px); }
 .tile.tile-position-2-4 {
-  -webkit-transform: translate(110px, 330px);
-  -moz-transform: translate(110px, 330px);
-  transform: translate(110px, 330px); }
+  -webkit-transform: translate(97px, 292px);
+  -moz-transform: translate(97px, 292px);
+  transform: translate(97px, 292px); }
 .tile.tile-position-3-1 {
-  -webkit-transform: translate(220px, 0px);
-  -moz-transform: translate(220px, 0px);
-  transform: translate(220px, 0px); }
+  -webkit-transform: translate(195px, 0px);
+  -moz-transform: translate(195px, 0px);
+  transform: translate(195px, 0px); }
 .tile.tile-position-3-2 {
-  -webkit-transform: translate(220px, 110px);
-  -moz-transform: translate(220px, 110px);
-  transform: translate(220px, 110px); }
+  -webkit-transform: translate(195px, 97px);
+  -moz-transform: translate(195px, 97px);
+  transform: translate(195px, 97px); }
 .tile.tile-position-3-3 {
-  -webkit-transform: translate(220px, 220px);
-  -moz-transform: translate(220px, 220px);
-  transform: translate(220px, 220px); }
+  -webkit-transform: translate(195px, 195px);
+  -moz-transform: translate(195px, 195px);
+  transform: translate(195px, 195px); }
 .tile.tile-position-3-4 {
-  -webkit-transform: translate(220px, 330px);
-  -moz-transform: translate(220px, 330px);
-  transform: translate(220px, 330px); }
+  -webkit-transform: translate(195px, 292px);
+  -moz-transform: translate(195px, 292px);
+  transform: translate(195px, 292px); }
 .tile.tile-position-4-1 {
-  -webkit-transform: translate(330px, 0px);
-  -moz-transform: translate(330px, 0px);
-  transform: translate(330px, 0px); }
+  -webkit-transform: translate(292px, 0px);
+  -moz-transform: translate(292px, 0px);
+  transform: translate(292px, 0px); }
 .tile.tile-position-4-2 {
-  -webkit-transform: translate(330px, 110px);
-  -moz-transform: translate(330px, 110px);
-  transform: translate(330px, 110px); }
+  -webkit-transform: translate(292px, 97px);
+  -moz-transform: translate(292px, 97px);
+  transform: translate(292px, 97px); }
 .tile.tile-position-4-3 {
-  -webkit-transform: translate(330px, 220px);
-  -moz-transform: translate(330px, 220px);
-  transform: translate(330px, 220px); }
+  -webkit-transform: translate(292px, 195px);
+  -moz-transform: translate(292px, 195px);
+  transform: translate(292px, 195px); }
 .tile.tile-position-4-4 {
-  -webkit-transform: translate(330px, 330px);
-  -moz-transform: translate(330px, 330px);
-  transform: translate(330px, 330px); }
+  -webkit-transform: translate(292px, 292px);
+  -moz-transform: translate(292px, 292px);
+  transform: translate(292px, 292px); }
 
 .tile {
   position: absolute;
@@ -337,7 +335,7 @@ hr {
     background: #edcf72;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
-    @media screen and (max-width: 470px) {
+    @media screen and (max-width: 420px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
@@ -345,7 +343,7 @@ hr {
     background: #edcc61;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
-    @media screen and (max-width: 470px) {
+    @media screen and (max-width: 420px) {
       .tile.tile-256 .tile-inner {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
@@ -353,7 +351,7 @@ hr {
     background: #edc850;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
-    @media screen and (max-width: 470px) {
+    @media screen and (max-width: 420px) {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
@@ -361,7 +359,7 @@ hr {
     background: #edc53f;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
-    @media screen and (max-width: 470px) {
+    @media screen and (max-width: 420px) {
       .tile.tile-1024 .tile-inner {
         font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
@@ -369,14 +367,14 @@ hr {
     background: #edc22e;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
-    @media screen and (max-width: 470px) {
+    @media screen and (max-width: 420px) {
       .tile.tile-2048 .tile-inner {
         font-size: 15px; } }
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
     background: #3c3a32;
     font-size: 30px; }
-    @media screen and (max-width: 470px) {
+    @media screen and (max-width: 420px) {
       .tile.tile-super .tile-inner {
         font-size: 10px; } }
 
@@ -511,7 +509,7 @@ hr {
   margin-top: 20px;
   float: left; }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 420px) {
   html, body {
     font-size: 15px; }
 
