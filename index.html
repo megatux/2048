@@ -3,29 +3,27 @@
 <head>
   <meta charset="utf-8">
   <title>2048</title>
-
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
-
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
-  <div class="container">
-    <div class="heading">
-      <h1 class="title">2048</h1>
-      <div class="scores-container">
-        <div class="score-container">0</div>
-        <div class="best-container">0</div>
-      </div>
+  <div class="heading">
+    <h1 class="title">2048</h1>
+    <div class="scores-container">
+      <div class="score-container">0</div>
+      <div class="best-container">0</div>
     </div>
+    <div id="restart"><a class="restart-button">Juego nuevo</a></div>
+  </div>
 
-    <div class="above-game">
-      <p class="game-intro">Junta los números y consigue el mosaico <strong>2048!</strong></p>
-      <a class="restart-button">Juego nuevo</a>
-      <br><p class="game-explanation">
-        <strong class="important">Como jugar:</strong> Usa los <strong>botones del cursor</strong> para mover los mosaicos. Cuando dos mosaicos con el mismo número se tocan, estos <strong>se unen en uno!</strong>
-      </p>
-    </div>
+  <div class="above-game">
+    <p class="game-intro">Junta los números y consigue el mosaico <strong>2048!</strong></p>
+    <p class="game-explanation">
+      <strong class="important">Como jugar:</strong> Usa los <strong>botones del cursor</strong> para mover los mosaicos. Cuando dos mosaicos con el mismo número se tocan, estos <strong>se unen en uno!</strong>
+    </p>
+  </div>
+
+  <div class="container">
 
     <div class="game-container">
       <div class="game-message">
@@ -68,15 +66,15 @@
       </div>
     </div>
 
-    <hr>
-    <p>
-    <strong class="important">Nota:</strong> Esta aplicación es un derivado del juego 2048 oficial en <a href="http://git.io/2048">http://git.io/2048.</a>
-    </p>
-    <hr>
-    <p>
-    Creado por <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Basado en <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 de Veewo Studio</a> y conceptualmente similar a <a href="http://asherv.com/threes/" target="_blank">'Threes' de Asher Vollmer.</a>
-    </p>
   </div>
+
+  <hr>
+  <p>
+  <strong class="important">Nota:</strong> Esta aplicación es un derivado del juego 2048 oficial en <a href="http://git.io/2048">http://git.io/2048.</a>
+  </p>
+  <p>
+  Creado por <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Basado en <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 de Veewo Studio</a> y conceptualmente similar a <a href="http://asherv.com/threes/" target="_blank">'Threes' de Asher Vollmer.</a>
+  </p>
 
   <script src="js/bind_polyfill.js"></script>
   <script src="js/classlist_polyfill.js"></script>
