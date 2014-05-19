@@ -18,33 +18,56 @@ window.fakeStorage = {
   }
 };
 
+
+var Cookies = {
+  init: function () {
+    var allCookies = document.cookie.split('; ');
+    for (var i=0;i<allCookies.length;i++) {
+      var cookiePair = allCookies[i].split('=');
+      this[cookiePair[0]] = cookiePair[1];
+    }
+  },
+  create: function (name,value,days) {
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      var expires = "; expires="+date.toGMTString();
+    }
+    else var expires = "";
+    document.cookie = name+"="+value+expires+"; path=/";
+    this[name] = value;
+  },
+  erase: function (name) {
+    this.create(name,'',-1);
+    this[name] = undefined;
+  }
+};
+Cookies.init();
+
 window.cookieStorage = {
-  setItem: function (id, val) {
-    var d = new Date();
-    d.setTime(d.getTime()+(100*365*24*60*60*1000));
-    var expires = "expires="+d.toGMTString();
-    document.cookie = id + "=" + String(val) + "; " + expires;
-    return String(val)
+  setItem: function(id, val) {
+    Cookies.create(id, val, 365)
+    return val;
   },
 
-  getItem: function (cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0; i<ca.length; i++) {
-      var c = ca[i].trim();
-      if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+  getItem: function(cname) {
+    return Cookies[cname];
+  },
+
+  removeItem: function(name) {
+    Cookies.create(name,"",-1);
+    return '';
+  },
+
+  clear: function() {
+    var cookies = document.cookie.split(";");
+
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i];
+      var eqPos = cookie.indexOf("=");
+      var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
     }
-    return undefined;
-  },
-
-  removeItem: function (name) {
-    if (this.getItem(name)) {
-      document.cookie = name + "=" + "; expires=Thu, 01-Jan-70 00:00:01 GMT";
-    }
-  },
-
-  clear: function () {
-    return this._data = {};
   }
 };
 
@@ -53,8 +76,8 @@ function LocalStorageManager() {
   this.gameStateKey     = "gameState";
 
   var supported = this.localStorageSupported();
-  this.storage = supported ? window.localStorage : window.cookieStorage;
-  // this.storage = window.cookieStorage;
+  // this.storage = supported ? window.localStorage : window.cookieStorage;
+  this.storage = window.cookieStorage;
 }
 
 LocalStorageManager.prototype.localStorageSupported = function () {
